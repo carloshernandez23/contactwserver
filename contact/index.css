@@ -1,0 +1,289 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid; 
+}
+
+
+h1,p,body {
+    margin: 0;
+}
+
+body {
+margin: 0;
+background-color: #030712;
+display: flex;
+flex-direction: column;
+padding: 1rem;
+min-height: 100vh;
+gap: 2rem;
+color: #cbd5e1;
+font-family: 'Poppins', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Unbounded', cursive;
+justify-content: center;
+}
+
+#logo {
+    color: #cbd5e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#logo2{
+    color: #cbd5e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#name-input, #tlf-input{
+    background:#020617;
+    border-radius: 0.3rem;
+    color: #cbd5e1;
+    height: 2rem;
+
+    
+}
+
+#tlf-input::placeholder {
+    color: #cbd5e1;
+}
+
+
+.required {
+    color: #ef4444;
+}
+
+.form-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#form {
+    background:#0f172a;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+
+}
+
+.helper-text {
+    display: none;
+}
+
+.display-text{
+display: block;
+}
+
+.correct {
+    border: none;
+    border-bottom: 2px solid #22c55e;
+    
+}
+
+.wrong {
+    border: none;
+    border-bottom: 2px solid #ef4444;
+    
+}
+
+
+input {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-family: 'Unbounded', cursive;
+    background: #101010;
+    outline: none;
+    color: #cbd5e1;
+    
+}
+
+
+#boton-registrar {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Unbounded', cursive;
+    flex-grow: 1;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #020617;
+    color: #cbd5e1;
+    transition: background 0.2s ease-in;
+
+}
+
+#boton-registrar:hover {
+    cursor: pointer;
+    background-color: #1e293b;
+}
+
+#cerrar-btn{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Unbounded', cursive;
+    flex-grow: 1;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #020617;
+    color: #cbd5e1;
+    transition: background 0.2s ease-in;
+}
+
+#cerrar-btn:hover {
+    cursor: pointer;
+    background-color: #1e293b;
+}
+
+
+#list {
+    
+    display: grid;
+    place-items: center;
+    max-height: 14rem;
+    padding: 0.3rem;
+    margin: 0;
+    border-radius: 1rem;
+    background:#020617;
+    overflow-x: auto;
+    overflow-y: auto;
+    border-top: #cbd5e1;
+    gap: 0.3rem;
+}
+
+
+#list::-webkit-scrollbar {
+    width: 15px;
+    
+  }
+   
+  #list::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    background-color: #0f172a; 
+  }
+  
+  #list::-webkit-scrollbar-track {
+    border-radius: 0.5rem;
+    background-color: #020617;
+  }
+  
+  #list::-webkit-scrollbar-corner{
+    background-color: #0f172a; 
+  }
+
+
+.delete-btn{
+    background: #0f172a;
+  
+    
+}
+
+.delete-btn:hover{
+    background-color: #020617;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+.check-btn {
+    color:#cbd5e1;  
+    background: #0f172a;
+}
+
+.check-btn:hover{
+    background-color: #020617;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+svg, path {
+    pointer-events: none;
+}
+
+span{
+    text-align: left;
+}
+
+.li1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 1rem;
+    background-color: #0f172a;
+    height: auto;
+    width: 100%;
+    
+}
+
+.li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    border-radius: 1rem;
+    background-color: #0f172a;
+    height: auto;
+    width: 100%;
+    
+}
+
+
+.li-input {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-family: 'Unbounded', cursive;
+    color: #cbd5e1;
+    width: 8.5rem;
+    text-align: center;
+    background-color: #1e293b;
+    border-radius: 0.5rem;
+    outline-style: double;
+    border-bottom: #fff;
+    outline-width: 0.1rem;
+}
+
+.li-input:read-only{
+    background: #0f172a;
+    color: #cbd5e1;
+    width: 8rem;
+    outline: none;
+   
+}
+
+
+@media (min-width: 700px) {
+    body {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        }
+     
+    #logo,#logo2{
+        font-size: 26px;
+        justify-content: end;
+        
+        }
+
+    #form { 
+        width: 30%;
+        
+    }
+
+    #list{
+        max-height: 13.5rem;
+        width: 30%;
+        
+    }
+}

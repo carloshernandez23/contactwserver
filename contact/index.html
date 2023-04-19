@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Righteous&family=Unbounded&display=swap" rel="stylesheet">
+   
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="logo">Lista de </h1> <h1 id="logo2"> Contactos</h1>
+    </div>
+    <form id="form">
+
+        <!-- Name Input -->
+        
+        <div class="form-input-container">
+            <label for="name-input">
+                Nombre <span class="required">*</span>
+            </label>
+<input id="name-input" type="text" autocomplete="off">
+<p class="helper-text">
+    Debe poseer solo letras.
+</p>
+        </div>
+
+   <!-- TLF INPUT -->
+
+
+        <div class="form-input-container">
+            <label for="tlf-input">
+                Teléfono <span class="required">*</span>
+            </label>
+<input id="tlf-input" type="tlf" placeholder="+58" autocomplete="off">
+<p class="helper-text">
+    Debe poseer solo numeros de teléfonos venezolanos. 
+</p>
+
+</div>
+
+        </div>
+
+<button disabled id="boton-registrar">REGISTRAR</button>
+<button id="cerrar-btn">CERRAR SESION</button>
+
+    </form>
+
+   
+    <ul id="list">
+        <!-- <li class="li1">
+          <span>Luis</span>
+          <span>Telefono</span>
+          <button class="delete-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="iconc" width="28" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="7" x2="20" y2="7" />
+                <line x1="10" y1="11" x2="10" y2="17" />
+                <line x1="14" y1="11" x2="14" y2="17" />
+                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+              </svg>
+          </button>
+          <button class="check-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                <path d="M13.5 6.5l4 4"></path>
+             </svg>
+        </button>
+        </li> -->
+
+    </ul>
+
+    <script src="index.js"></script>
+</body>
+</html>

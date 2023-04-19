@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "username": "carlos",
+      "id": 1
+    },
+    {
+      "username": "andrea",
+      "id": 2
+    }
+  ],
+  "contact": [
+    {
+      "name": "ANDREA",
+      "tlf": "04145424578",
+      "user": "carlos",
+      "id": 1
+    },
+    {
+      "name": "MARIA",
+      "tlf": "04165458454",
+      "user": "carlos",
+      "id": 2
+    },
+    {
+      "name": "LUIS",
+      "tlf": "04145484546",
+      "user": "andrea",
+      "id": 3
+    },
+    {
+      "name": "GABY",
+      "tlf": "04245458454",
+      "user": "andrea",
+      "id": 4
+    }
+  ]
+}
